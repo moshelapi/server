@@ -1,10 +1,11 @@
 import express from "express";
 import cors from "./middleware/morgen/cors/cors";
 import morgan from "./middleware/morgen/morgen";
+import { connectToDatabase } from "./connectToDB";
 
 const app = express();
 
-// connectToDatabase();
+connectToDatabase();
 
 app.use(express.json());
 
