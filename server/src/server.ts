@@ -5,7 +5,7 @@ import usersRoute from './users/routes.users';
 import mongoose from 'mongoose';
 const app = express();
 
-// connectToDatabase();
+connectToDatabase();
 
 app.use(express.json());
 
